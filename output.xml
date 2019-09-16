@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190916 14:57:35.524" generator="Robot 3.1.2 (Python 2.7.8 on win32)">
+<suite source="C:\Users\Jayasree.Konigala\PycharmProjects\Automation\ticket.robot" id="s1" name="Ticket">
+<test id="s1-t1" name="NNC :: Login test">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://actoneye.com/nnc/Login/</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190916 14:57:35.980" level="INFO">Opening browser 'chrome' to base url 'https://actoneye.com/nnc/Login/'.</msg>
+<status status="PASS" endtime="20190916 14:57:43.104" starttime="20190916 14:57:35.979"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="username"]</arg>
+<arg>jayasree.konigala@netenrich.com</arg>
+</arguments>
+<msg timestamp="20190916 14:57:43.106" level="INFO">Typing text 'jayasree.konigala@netenrich.com' into text field '//input[@name="username"]'.</msg>
+<status status="PASS" endtime="20190916 14:57:43.308" starttime="20190916 14:57:43.105"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@id="loginid"]</arg>
+</arguments>
+<msg timestamp="20190916 14:57:43.309" level="INFO">Clicking element '//button[@id="loginid"]'.</msg>
+<status status="PASS" endtime="20190916 14:57:49.713" starttime="20190916 14:57:43.308"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="Password"]</arg>
+<arg>sreesree@12345</arg>
+</arguments>
+<msg timestamp="20190916 14:57:49.714" level="INFO">Typing text 'sreesree@12345' into text field '//input[@name="Password"]'.</msg>
+<status status="PASS" endtime="20190916 14:57:49.899" starttime="20190916 14:57:49.714"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@id="submitButton"]</arg>
+</arguments>
+<msg timestamp="20190916 14:57:49.900" level="INFO">Clicking element '//span[@id="submitButton"]'.</msg>
+<status status="PASS" endtime="20190916 14:57:55.296" starttime="20190916 14:57:49.900"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//input[@id="openTicket"])</arg>
+<arg>30178437</arg>
+</arguments>
+<msg timestamp="20190916 14:57:55.300" level="INFO">Typing text '30178437' into text field 'xpath=(//input[@id="openTicket"])'.</msg>
+<status status="PASS" endtime="20190916 14:57:55.489" starttime="20190916 14:57:55.299"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@class="btn btn-primary notes"]</arg>
+</arguments>
+<msg timestamp="20190916 14:57:55.490" level="INFO">Clicking element '//button[@class="btn btn-primary notes"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190916 14:57:55.936" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190916 14:57:55.936" starttime="20190916 14:57:55.512"></status>
+</kw>
+<msg timestamp="20190916 14:57:55.939" level="FAIL">Element with locator '//button[@class="btn btn-primary notes"]' not found.</msg>
+<status status="FAIL" endtime="20190916 14:57:55.939" starttime="20190916 14:57:55.489"></status>
+</kw>
+<status status="FAIL" endtime="20190916 14:57:55.939" critical="yes" starttime="20190916 14:57:35.978">Element with locator '//button[@class="btn btn-primary notes"]' not found.</status>
+</test>
+<doc>A test suite with a single test for NNC :: Login
+Created by hats' Robotcorder</doc>
+<status status="FAIL" endtime="20190916 14:57:55.943" starttime="20190916 14:57:35.529"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Ticket" pass="0">Ticket</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
