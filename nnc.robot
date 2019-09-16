@@ -29,7 +29,7 @@ NNC :: Login test
     Select From List By Value    //select[@name="nocs"]    38
     Click Element    xpath=(//span[@class="filter-option pull-left"])[16]
     Click Element    xpath=(//span[@class="text"])[740]
-    Select From List By Value    //select[@name="partners"]    628909
-    Click Element    xpath=(//button[@title="Select Department"])[2]
+    #Select From List By Value    //select[@name="partners"]    628909
+    #Click Element    xpath=(//button[@title="Select Department"])[2]
     Select From List By Value    //select[@name="department"]    351
     Click Element    //button[@name="run"]
