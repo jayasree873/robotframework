@@ -14,7 +14,6 @@ NNC :: Login test
     Click Element    //button[@id="loginid"]
     Input Text    //input[@name="Password"]    sreesree@12345
     Click Element    //span[@id="submitButton"]
-    
     Click Link    xpath=(//a[@class="dropdown-toggle"])[2]
     Click Link    //a[@href="/nnc/serviceManagement"]
     Click Element  xpath=(//button[@class="btn dropdown-toggle btn-default"])[10]
