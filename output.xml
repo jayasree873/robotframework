@@ -1,78 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190916 14:57:35.524" generator="Robot 3.1.2 (Python 2.7.8 on win32)">
-<suite source="C:\Users\Jayasree.Konigala\PycharmProjects\Automation\ticket.robot" id="s1" name="Ticket">
+<robot rpa="false" generated="20190917 11:03:28.699" generator="Robot 3.1.2 (Python 2.7.8 on win32)">
+<suite source="C:\Users\Jayasree.Konigala\PycharmProjects\Automation\nnc.robot" id="s1" name="Nnc">
 <test id="s1-t1" name="NNC :: Login test">
-<kw name="Open Browser" library="Selenium2Library">
+<kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>https://actoneye.com/nnc/Login/</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190916 14:57:35.980" level="INFO">Opening browser 'chrome' to base url 'https://actoneye.com/nnc/Login/'.</msg>
-<status status="PASS" endtime="20190916 14:57:43.104" starttime="20190916 14:57:35.979"></status>
+<msg timestamp="20190917 11:03:29.091" level="INFO">Opening browser 'chrome' to base url 'https://actoneye.com/nnc/Login/'.</msg>
+<status status="PASS" endtime="20190917 11:03:37.675" starttime="20190917 11:03:29.091"></status>
 </kw>
-<kw name="Input Text" library="Selenium2Library">
+<kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>//input[@name="username"]</arg>
 <arg>jayasree.konigala@netenrich.com</arg>
 </arguments>
-<msg timestamp="20190916 14:57:43.106" level="INFO">Typing text 'jayasree.konigala@netenrich.com' into text field '//input[@name="username"]'.</msg>
-<status status="PASS" endtime="20190916 14:57:43.308" starttime="20190916 14:57:43.105"></status>
+<msg timestamp="20190917 11:03:37.680" level="INFO">Typing text 'jayasree.konigala@netenrich.com' into text field '//input[@name="username"]'.</msg>
+<status status="PASS" endtime="20190917 11:03:37.947" starttime="20190917 11:03:37.679"></status>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//button[@id="loginid"]</arg>
 </arguments>
-<msg timestamp="20190916 14:57:43.309" level="INFO">Clicking element '//button[@id="loginid"]'.</msg>
-<status status="PASS" endtime="20190916 14:57:49.713" starttime="20190916 14:57:43.308"></status>
+<msg timestamp="20190917 11:03:37.949" level="INFO">Clicking element '//button[@id="loginid"]'.</msg>
+<status status="PASS" endtime="20190917 11:03:41.922" starttime="20190917 11:03:37.948"></status>
 </kw>
-<kw name="Input Text" library="Selenium2Library">
+<kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>//input[@name="Password"]</arg>
 <arg>sreesree@12345</arg>
 </arguments>
-<msg timestamp="20190916 14:57:49.714" level="INFO">Typing text 'sreesree@12345' into text field '//input[@name="Password"]'.</msg>
-<status status="PASS" endtime="20190916 14:57:49.899" starttime="20190916 14:57:49.714"></status>
+<msg timestamp="20190917 11:03:41.923" level="INFO">Typing text 'sreesree@12345' into text field '//input[@name="Password"]'.</msg>
+<status status="PASS" endtime="20190917 11:03:42.074" starttime="20190917 11:03:41.923"></status>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//span[@id="submitButton"]</arg>
 </arguments>
-<msg timestamp="20190916 14:57:49.900" level="INFO">Clicking element '//span[@id="submitButton"]'.</msg>
-<status status="PASS" endtime="20190916 14:57:55.296" starttime="20190916 14:57:49.900"></status>
+<msg timestamp="20190917 11:03:42.075" level="INFO">Clicking element '//span[@id="submitButton"]'.</msg>
+<status status="PASS" endtime="20190917 11:03:48.849" starttime="20190917 11:03:42.075"></status>
 </kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
-<arg>xpath=(//input[@id="openTicket"])</arg>
-<arg>30178437</arg>
+<arg>xpath=(//a[@class="dropdown-toggle"])[2]</arg>
 </arguments>
-<msg timestamp="20190916 14:57:55.300" level="INFO">Typing text '30178437' into text field 'xpath=(//input[@id="openTicket"])'.</msg>
-<status status="PASS" endtime="20190916 14:57:55.489" starttime="20190916 14:57:55.299"></status>
+<msg timestamp="20190917 11:03:48.852" level="INFO">Clicking link 'xpath=(//a[@class="dropdown-toggle"])[2]'.</msg>
+<status status="PASS" endtime="20190917 11:03:48.971" starttime="20190917 11:03:48.851"></status>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>//a[@href="/nnc/serviceManagement"]</arg>
+</arguments>
+<msg timestamp="20190917 11:03:48.972" level="INFO">Clicking link '//a[@href="/nnc/serviceManagement"]'.</msg>
+<status status="PASS" endtime="20190917 11:03:52.366" starttime="20190917 11:03:48.971"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>//button[@class="btn btn-primary notes"]</arg>
+<arg>xpath=(//button[@class="btn dropdown-toggle btn-default"])[10]</arg>
 </arguments>
-<msg timestamp="20190916 14:57:55.490" level="INFO">Clicking element '//button[@class="btn btn-primary notes"]'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
+<msg timestamp="20190917 11:03:52.367" level="INFO">Clicking element 'xpath=(//button[@class="btn dropdown-toggle btn-default"])[10]'.</msg>
+<status status="PASS" endtime="20190917 11:03:52.578" starttime="20190917 11:03:52.366"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//span[@class="text"])[2]</arg>
+</arguments>
+<msg timestamp="20190917 11:03:52.579" level="INFO">Clicking element 'xpath=(//span[@class="text"])[2]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190916 14:57:55.936" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190916 14:57:55.936" starttime="20190916 14:57:55.512"></status>
+<msg timestamp="20190917 11:03:53.512" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190917 11:03:53.512" starttime="20190917 11:03:53.033"></status>
 </kw>
-<msg timestamp="20190916 14:57:55.939" level="FAIL">Element with locator '//button[@class="btn btn-primary notes"]' not found.</msg>
-<status status="FAIL" endtime="20190916 14:57:55.939" starttime="20190916 14:57:55.489"></status>
+<msg timestamp="20190917 11:03:53.518" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.132)
+</msg>
+<status status="FAIL" endtime="20190917 11:03:53.518" starttime="20190917 11:03:52.579"></status>
 </kw>
-<status status="FAIL" endtime="20190916 14:57:55.939" critical="yes" starttime="20190916 14:57:35.978">Element with locator '//button[@class="btn btn-primary notes"]' not found.</status>
+<status status="FAIL" endtime="20190917 11:03:53.521" critical="yes" starttime="20190917 11:03:29.089">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=76.0.3809.132)
+</status>
 </test>
 <doc>A test suite with a single test for NNC :: Login
 Created by hats' Robotcorder</doc>
-<status status="FAIL" endtime="20190916 14:57:55.943" starttime="20190916 14:57:35.529"></status>
+<status status="FAIL" endtime="20190917 11:03:53.527" starttime="20190917 11:03:28.703"></status>
 </suite>
 <statistics>
 <total>
@@ -82,7 +101,7 @@ Created by hats' Robotcorder</doc>
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="Ticket" pass="0">Ticket</stat>
+<stat fail="1" id="s1" name="Nnc" pass="0">Nnc</stat>
 </suite>
 </statistics>
 <errors>
