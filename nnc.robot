@@ -16,7 +16,7 @@ NNC :: Login test
     Click Element    //span[@id="submitButton"]
     Click Link    xpath=(//a[@class="dropdown-toggle"])[2]
     Click Link    //a[@href="/nnc/serviceManagement"]
-    #Click Element  xpath=(//button[@class="btn dropdown-toggle btn-default"])[10]
+    Click Element  xpath=(//button[@class="btn dropdown-toggle btn-default"])[10]
     Click Element    xpath=(//span[@class="text"])[2]
     Select From List By Value   //select[@name="daysValue"]  2
     Click Element    xpath=(//span[@class="filter-option pull-left"])[15]
