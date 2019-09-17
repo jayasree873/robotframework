@@ -27,10 +27,5 @@ NNC :: Login test
     Click Element    xpath=(//span[@class="filter-option pull-left"])[18]
     Input Text    xpath=(//input[@class="form-control"])[15]    c
     Input Text    xpath=(//input[@class="form-control"])[15]    ca
-    Click Element    xpath=(//span[@class="text"])[1766]
-    Select From List By Value    //select[@name="department"]    351
-    Click Element    //button[@name="run"]
-    Click Element    //button[@id="cboxClose"]
-    Click Element    //i[@id="excelDownload"]
-
+   
     Close Browser
